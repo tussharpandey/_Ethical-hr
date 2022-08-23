@@ -1,0 +1,112 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A0932;
+    text-align: left !important;
+}
+.footer li{
+    list-style: none;
+}
+.mainfooter{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 50px 80px;
+    color: white;
+    min-height: 300px;
+    flex-wrap: wrap;
+}
+.mainfooter .navigation{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 13px;
+    padding-bottom: 20px;
+}
+.mainfooter form{
+    display: flex;
+}
+.mainfooter form input{
+    height: 30px;
+    width: 160px;
+}
+.mainfooter form button{
+    border: none;
+    color: white;
+    background-color: green;
+}
+.mainfooter div{
+    width: 200px;
+}
+.mainfooter h2{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.contact li{
+    margin: 10px 0px;
+}
+.social{
+    gap: 5px;
+}
+.subscribe p{
+    line-height: 2rem;
+}
+.social div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navigation li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contact li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.copyright{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-top: white solid 1px;
+    text-align: center !important;
+    color: white;
+}
+.copyright p{
+    padding: 0;
+    margin: 0;
+}
+.footer .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+}
+.footer .social div{
+    display: flex;
+}
+.social h2{
+    width: 100%;
+}
+.contact li{
+   display: flex;
+   align-items: center; 
+}
+@media screen and (max-width: 850px) {
+
+.social{
+    margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .mainfooter{
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  
+
+}

@@ -1,0 +1,151 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #1A0932;
+}
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 200px;
+  border-bottom: rgba(165, 165, 165, 0.685) solid 1px;
+  color: white;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialNav {
+  /* width: 20px;
+    height: 20px; */
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.socialNav div {
+  cursor: pointer;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 80px;
+}
+.logoNav {
+  display: flex;
+  gap: 20px;
+  color: white;
+  align-items: center;
+}
+.logoNav img {
+  width: 70px;
+}
+.logoNav h2 {
+  display: flex;
+  align-items: center;
+}
+.navLinks {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+.navLinks div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.navLinks div:hover {
+  color: green;
+  cursor: pointer;
+}
+.navLinks button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  transition: 0.5s;
+}
+.navLinks button:hover {
+  background-color: grey !important;
+  cursor: pointer;
+}
+.navLinks .lin {
+  background-color: rgb(231, 122, 20);
+}
+.navLinks .reg {
+  background-color: green;
+}
+.navLinks .regI{
+    display: none;
+    width: auto !important;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+.regI.active{
+    display: flex !important;
+}
+.reg.active{
+   display: none;
+}
+.lin.active{
+   display: none;
+}
+.close{
+    background-color: red !important;
+}
+.menu {
+  display: none;
+  border-radius: 3.5px;
+  border: solid rgba(131, 131, 131, 0.603) 1px;
+  padding: 6px;
+}
+.menu:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 950px) {
+  .mainNav {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr;
+    /* grid-template-rows: .3fr fr; */
+    grid-template-areas:
+      " logo logo menu"
+      "bar bar bar";
+  }
+  .navLinks {
+    display: none;
+    transform: scale(0);
+    grid-area: bar;
+    transition: 0.5s;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+ 
+  .navLinks.active {
+    display: flex;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  .menu {
+    display: flex;
+    grid-area: menu;
+  }
+  .logoNav {
+    grid-area: logo;
+  }
+  .topNav {
+    padding: 8px 100px;
+  }
+}

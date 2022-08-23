@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  background-color: #032B0A;
+  color: #FBC104;
+}
+
+.loading{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.loading img{
+  width: 100px;
+  height: 100px;
+}

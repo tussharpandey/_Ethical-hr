@@ -1,0 +1,70 @@
+.join{
+    background: url('../banner-img.png') no-repeat;
+    background-color: rgba(88, 88, 88, 0.822) !important;
+    max-height: 400px;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin: 10px;
+}
+.join-cont{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+.join-cont h2{
+    font-size: 40px;
+    font-weight: 800;
+
+}
+.join-cont p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.join-cont button{
+    height: 50px;
+    width: 180px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgb(1, 105, 1);
+    color: white;
+    transition: .5s;
+}
+.join-cont button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 850px) {
+    .join{
+        height: 300px;
+    }
+    .join-cont{
+        width: 50%;
+    }
+    .join-cont h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .join-cont p{
+        font-size: 15px;
+    }
+    .join-cont button{
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .join{
+        height: 250px;
+    }
+}
